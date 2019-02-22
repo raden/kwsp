@@ -17,14 +17,19 @@ cin>>untung;
 
 untung_berompok=0;
 
-for (int i=0;i<tahun;i++){
-untung_tahun=((untung_berompok+asas)*(untung/100));
-untung_berompok+=untung_tahun;
-jumlah_untung=asas+untung_berompok;
-cout<<"Untung tahun "<<i+1<<" ialah RM "<<untung_tahun<<endl;
+for (int i=0;i<tahun;i++)
+{
+	untung_tahun=((untung_berompok+asas)*(untung/100));
+	untung_berompok+=untung_tahun;
+	jumlah_untung=asas+untung_berompok;
+	cout<<"Untung tahun "<<i+1<<" ialah RM "<<untung_tahun<<endl;
 }
 
-cout<<"Jumlah baru dana ialah RM "<<jumlah_untung<<endl;
+cout<<endl;
+cout<<"Jumlah keuntungan ialah RM "<<untung_berompok<<endl;
+
+cout<<endl;
+cout<<"Jumlah baru dana bercampur untung selama "<<tahun<<" tahun ialah RM "<<jumlah_untung<<endl;
 }
 
 
